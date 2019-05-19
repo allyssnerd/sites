@@ -1,67 +1,76 @@
 body{
-    margin: 0px;
-    padding: 0px;
-    font-family: verdana;
+	margin: 0;
+	padding: 0;
+	font-family: verdana;
+	background-image: url(C:\Users\wai00217\Desktop\Formulario\imagens\bg.jpg);	
 }
 
-#container{
-    display: flex;
-    flex-direction: column;
+.login{
+	width: 300px;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #F5DEB3;
 }
 
-nav{
-    background-color: #e60101;
-}
-nav ul{
-    display: flex;
-    justify-content: space-around;
-}
-ul li{
-    list-style-type: none;
-    padding: 20px;
-    color: #fff;
-    margin: 0px;
-}
-li:hover{
-    background-color: #6f1414;
-}
-figure{
-    width: 70%;
-    margin: auto;
-    text-align: center;
-    padding: 20px;
-    background-color: #ccc;
-    border: 2px solid #f00;
-    margin-top: 20px;
-}
-figure img{
-    width: 100%;
+.login h1{
+	color: black;
+	text-transform: uppercase;
+	text-align: center;	
 }
 
-li img{
-    display: none;
+.login input[type = "text"], .login input[type = "password"]{
+	border:0;
+	background: none;
+	display:block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	width: 100px;
+	outline: none;
+	color: black;
+	border-radius: 24px;
+	transition: 0.25s;
+	background: white;
+	list-style-type: none;
+    padding: 5px;
 }
 
-@media screen and (max-width:600px){
-    body{
-        background-color: #000;
-    }
-    #container{
-        flex-direction: row;
-    }
-    nav{
-        width:20px;
-    }
-    nav ul{
-        flex-direction: column;
-        padding: 0px;
-        width: 100%;
-        text-align: center;
-    }
-    li img{
-        display: block;
-    }
-    li span{
-        display: none;
-    }
+.login h6{
+	color: black;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: left;
+}
+.login ul h6{
+	color: black;
+	text-transform: uppercase;
+	font-weight: 50;
+	text-align:right;
+}
+
+.login input[type = "text"]:focus, .login input[type = "password"]:focus{
+	width: 280px;
+	border-color: #2ecc71;
+}
+
+body input[type = "submit"]{
+	border:0;
+	background: none;
+	display: none;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #2ecc71;
+	padding: 14px 40px;
+	outline: none;
+	color: black;
+	border-radius: 24px;
+	transition: 0.25px;
+	cursor: pointer;
+}
+
+.login input[type = "submit"]:hover{
+	background: #2ecc71;
 }
